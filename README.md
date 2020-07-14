@@ -1,6 +1,9 @@
 # Command to create a docker build
 sudo docker build -t "food-aggregator" ~/work/src/mbrdi/food-aggregator/
 
+# or pull image from docker 
+docker pull parwinder2011/food-aggregator
+
 # Command to run a container and mapping to external localhost 
 sudo docker run -p 127.0.0.1:3000:3000 --env-file ~/work/src/mbrdi/food-aggregator/dev.env "food-aggregator"
 
